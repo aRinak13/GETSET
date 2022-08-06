@@ -1,37 +1,66 @@
 package domain;
 
 public class CommentsInfo {
-    private int idComment;
-    private int amountComments;
-    private String amountCommentsAbbreviation;
+    private int count;
+    private int canPost;
+    private int groupsCanPost;
+    private boolean canClose;
+    private boolean canOpen;
 
-    public CommentsInfo(int idComment, int amountComments, String amountCommentsAbbreviation) {
-        this.idComment = idComment;
-        this.amountComments = amountComments;
-        this.amountCommentsAbbreviation = amountCommentsAbbreviation;
+    public CommentsInfo(int count, int canPost, int groupsCanPost, boolean canClose, boolean canOpen) {
+        this.count = count;
+        this.canPost = canPost;
+        this.groupsCanPost = groupsCanPost;
+        this.canClose = canClose;
+        this.canOpen = canOpen;
+}
+    public int getCount() {
+
+        return count;
     }
 
-    public int getIdComment() {
-        return idComment;
+    public void setCount(int count) {
+
+        this.count = count;
     }
 
-    public void setIdComment(int idComment) {
-        this.idComment = idComment;
+    public int getCanPost() {
+
+        return canPost;
     }
 
-    public int getAmountComments() {
-        return amountComments;
+    public void setCanPost(int canPost) {
+
+        this.canPost = canPost;
     }
 
-    public void setAmountComments(int amountComments) {
-        this.amountComments = amountComments;
+    public int getGroupsCanPost() {
+
+        return groupsCanPost;
     }
 
-    public String getAmountCommentsAbbreviation() {
-        return amountCommentsAbbreviation;
+    public void setGroupsCanPost(int groupsCanPost) {
+
+        this.groupsCanPost = groupsCanPost;
     }
 
-    public void setAmountCommentsAbbreviation(String amountCommentsAbbreviation) {
-        this.amountCommentsAbbreviation = amountCommentsAbbreviation;
+    public boolean getCanClose() {
+
+        return canClose;
+    }
+
+    public void setCanClose(boolean canClose) {
+
+        this.canClose = canClose;
+    }
+
+    public boolean getCanOpen() {
+
+        return canOpen;
+    }
+
+    public void setCanOpen(boolean canOpen) {
+
+        this.canOpen = canOpen;
     }
 }
